@@ -1,0 +1,373 @@
+html{
+      scroll-behavior: smooth;
+     box-sizing: border-box;
+     margin: 0;
+}
+  
+body{
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: black;
+   
+}
+
+.container{
+
+    margin: 20px;
+    padding: 0 16px;
+    
+} 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap ;
+} 
+.logo{
+      backdrop-filter: blur(1px);
+      width: 1px;
+}  
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+} 
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+} 
+nav ul li a::after{
+    content:'' ;
+    width: 0;
+    height: 3px;
+    background: whitesmoke;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s;
+} 
+nav ul li a:hover::after{
+    width: 100%;
+}
+.row{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+}
+.about-col-1 {
+      flex-basis: 40%;
+}
+.about-col-2{
+      flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    color: whitesmoke;
+    font-weight: 600;
+}
+.tab-titles{
+      display: flex;
+      margin: 20px 0 40px;
+      color: white;
+}
+.tab-links{
+      margin-right: 50px;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+      position: relative;
+}
+.tab-links::after{
+      content: '';
+      width: 0px;
+      height: 3px;
+      background: whitesmoke;
+      position: absolute;
+      left: 0;
+      bottom: -7px;
+      transition: 0.4s;
+}
+.tab-links.active-link::after{
+      width: 50%;
+}
+.tab-contents{
+      list-style: none;
+      margin: 10px 0;
+}
+.tab-contents ul li span{
+      color: whitesmoke;
+      font-size: 20px;
+}
+.tab-contents{
+      display: none;
+}
+.tab-contents.active-tab{
+      display: block;
+}        
+.column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+}    
+.card{
+      margin: 50px;
+      background-color: black;
+
+}           
+.title {
+      color: white;
+} 
+.button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: whitesmoke;
+      background-color: black;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+}
+    
+.button:hover {
+      background-color: whitesmoke;
+}
+    
+.contact-left{
+      flex-basis: 35%;
+}
+.contact-right{
+      flex-basis: 60%;
+}
+.contact-left p{
+      margin-top: 30px;
+}
+.contact-left p i{
+      color: whitesmoke;
+      margin-right: 15px;
+      font-size: 25px;
+}
+.social-icons a{
+      text-decoration: none;
+      font-size: 30px;
+      margin-right: 15px;
+      color: whitesmoke;
+      display: inline-block;
+      transition: transform 0.5s;
+}
+.social-icons a:hover{
+      color: black;
+      transform: translateY(-5px);
+}
+.btn.btn2{
+      display: inline-block;
+      background: whitesmoke;
+      background-color: black;
+      color:whitesmoke;
+      cursor: pointer;
+}
+.btn.btn2:hover{
+      background-color: white;
+      transition: 0.5s;
+}
+.contact-right form{
+      width: 100%;
+}
+form input, form textarea{
+      width: 100%;
+      border: 0;
+      outline: none;
+      background: #262226;
+      padding: 15px;
+      margin: 15px 0;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 6px;
+}
+form .btn2{
+      padding: 14px 60px;
+      font-size: 18px;
+      margin-top: 20px;
+      cursor: pointer;
+}
+.madeby{
+      width: 100%;
+      text-align: center;
+      padding: 30px 0;
+      backdrop-filter: blur(2px);
+      margin-top: 20px;
+}
+.btn{
+      display: block;
+      margin: 50px auto;
+      width: fit-content;
+      border: 1px solid gray;
+      padding: 14px 50px;
+      border-radius: 6px;
+      text-decoration: none;
+      color: white;
+      transition: background 0.5s;
+      background-color: black;
+}
+.btn:hover{
+      background: whitesmoke;
+}
+    
+.button:hover{
+      transition: 0.5s;
+      background-color: whitesmoke;
+      cursor: pointer;
+}
+.wababet{
+    color: white;
+}
+.container img{
+      display: flex;
+      flex-direction: row;
+}
+#calculator{
+      display: grid;
+      grid-template-columns: repeat(3,500px);
+      grid-template-rows: repeat(3,500px);
+}
+.cal{
+      margin: 5px;
+      width: 500px;
+}
+.buttons-c{
+      display: grid;
+      grid-template-columns: repeat(4, 100px);
+      grid-template-rows:repeat(5,100px) ;
+}
+
+.content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 2.5rem;
+      width: 65%;
+      margin-left: 15%;
+      border-radius: 10px;
+      backdrop-filter: blur(2px);
+  }
+  
+.images {
+      display: grid;
+      grid-template-columns: repeat(3, 18.5rem);
+      grid-template-rows: repeat(2, 18.5rem);
+}
+  
+img {
+      width: 14rem;
+      height: 13.5rem;
+      border-radius: 10px;
+      margin: auto;
+      display: block;
+      transition: all 0.5s;
+}
+  
+.hvr {
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+}
+  
+h3{
+      color: white;
+      font-size: 25px;
+}
+  
+.overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 75%;
+      left: 12%;
+      padding: 0;
+      height: 0;
+      width: 76.5%;
+      border-radius: 10px;
+      background-color: rgb(0, 0, 0, 0.5);
+      cursor: pointer;
+      opacity: 0;
+      transition: all 0.4s ease;
+}
+  
+.hvr:hover .overlay {
+      height: 73%;
+      top: 0;
+      opacity: 1;
+      background-color: rgb(0, 0, 0, 0.5);
+}
+  
+.hvr:hover img {
+      box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.5);
+      filter: blur(2px);
+}
+  
+video {
+      backdrop-filter: blur(2px);
+      width: 700px;
+      margin: 20px 20px 50px 100px;
+      transition: all 0.4s;
+}
+  
+video:hover {
+      box-shadow: 15px 15px 5px rgb(0, 0, 0, 0.5);
+}
+  
+body::-webkit-scrollbar {
+      width: 8.5px;
+}
+  
+body::-webkit-scrollbar-thumb {
+      background-color: rgb(231, 12, 172);
+}
+  
+body::-webkit-scrollbar-thumb:hover {
+      background-color: rgb(231, 13, 172);
+}
+#about{
+      background-image: url('https://wallpapercave.com/wp/wp2757875.gif');
+      background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#contact{
+      background-image: url('https://media.giphy.com/media/7RsNaOAbQEf8Q/giphy.gif');
+      background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#gallery{
+      background-image: url('https://wallpapercave.com/wp/wp2763957.gif');
+      background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#header{
+      background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/37f002aa-032d-480b-9aa7-474adef47ed6/daqohse-f79cb156-0096-4748-9f7e-39b15cf2e86e.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM3ZjAwMmFhLTAzMmQtNDgwYi05YWE3LTQ3NGFkZWY0N2VkNlwvZGFxb2hzZS1mNzljYjE1Ni0wMDk2LTQ3NDgtOWY3ZS0zOWIxNWNmMmU4NmUuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.J-x32M2EVAjG7wBPe_hvxGgyKH1dUGhBaoYqYjhUXW4');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+}
+#home{
+      background-image: url('https://cdna.artstation.com/p/assets/images/images/025/789/352/original/pixel-jeff-galaxy-far-far-away.gif?1586928273');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+}
+a{
+      text-decoration: none;
+      color: violet;
+}

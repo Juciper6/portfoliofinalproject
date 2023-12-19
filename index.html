@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PLEASE INPUT A PASSWORD</h1>
+            <input type="password" id="passcode" placeholder="Password" required>
+            <button onclick="checkPasscode()">Log In</button>
+    </div>
+    <script>
+        function checkPasscode(){
+            const myPasscode = 2444;
+
+            let passcode = document.getElementById('passcode').value;
+
+            if(myPasscode == passcode){
+                console.log(passcode)
+                window.location.replace('portfolio.html');
+            }
+            else if(passcode == '' || passcode == null){
+                alert('Please enter the passcode');                    
+            }
+            else if(passcode != myPasscode){
+                alert('You have entered a wrong password');
+            }
+        }
+
+
+    </script>
+</body>
+</html>
